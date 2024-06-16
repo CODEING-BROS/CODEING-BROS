@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="date-wrap" id="dateWrap">
+        <div class="calendar">
+            <img src="https://www.redbus.in/railways/public/images/calendar_icon.svg" alt="" class="train-icon">
+            <div class="date-text">
+                <div class="date-day">Sat</div>
+                <div class="date-month">16 Jun</div>
+                <div class="date-year">2024</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar-wrapper" id="calendarWrapper" style="display: none;">
+        <div class="top-part">
+            <div class="preview" id="prevMonth">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="status" id="currentMonth">Jul 2024</div>
+            <div class="next" id="nextMonth">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="days">
+            <div class="day">MON</div>
+            <div class="day">TUE</div>
+            <div class="day">WED</div>
+            <div class="day">THU</div>
+            <div class="day">FRI</div>
+            <div class="day">SAT</div>
+            <div class="day">SUN</div>
+        </div>
+
+        <div id="dateRowsContainer"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

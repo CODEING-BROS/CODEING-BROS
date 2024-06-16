@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.date-wrap {
+    cursor: pointer;
+}
+
+.calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    z-index: 100;
+    border: 1px solid #e4e4e4;
+    background: white;
+    position: absolute;
+}
+
+.top-part {
+    display: flex;
+    border-bottom: 3px solid #f0f0f4;
+}
+
+.preview, .status, .next {
+    font-weight: 500;
+    height: 15%;
+    border: 0;
+    flex-grow: 1;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.status {
+    flex-grow: 2;
+}
+
+.days {
+    display: flex;
+    padding: 6px;
+    border-bottom: 3px solid #f0f0f4;
+}
+
+.day, .date {
+    font-weight: 700;
+    height: 15%;
+    border: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 5px;
+    text-align: center;
+    width: 10%;
+}
+
+.date-row {
+    display: flex;
+}
+
+.date {
+    font-weight: 400;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    font-size: 11px;
+    box-sizing: border-box;
+    margin: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 29px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    opacity: 1;
+    color: black;
+    background: white;
+}
+
+.date:hover {
+    background-color: #fab9bc;
+}
+
+.date:active {
+    background-color: #d84e55;
+}
+
+.current-date {
+    background-color: red;
+    color: white;
+}
+
+.selected-date {
+    background-color: blue;
+    color: white;
+}
